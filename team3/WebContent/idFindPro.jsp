@@ -9,9 +9,12 @@
 <title>아이디 찾기 결과</title>
 </head>
 <body>
+ <form action="loginForm.jsp" method="post">
 	<c:if test="${result > 0}">
-	    <center>고객님의 아이디는 ${m_id} 입니다 <p></center>
-	</c:if>
+	    <center>고객님의 아이디는 ${m_id} 입니다 <p>
+	    	<input type="submit" value="로그인"></center>
+	 </c:if>
+	</form>
 	<c:if test="${result == 0}">
 		<script type="text/javascript">
 			alert("입력하신 정보가 다릅니다. 다시 작성해주세요");
